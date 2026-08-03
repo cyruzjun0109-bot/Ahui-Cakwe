@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ahui Cakwe</title>
+
+<link href="https://www.ahuicakwe.id">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#fafafa;
+    color:#333;
+}
+
+/* Navbar */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(0,0,0,.8);
+    backdrop-filter:blur(10px);
+    z-index:999;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    color:#FFD369;
+    font-size:28px;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#FFD369;
+}
+
+/* Hero */
+
+.hero{
+    height:100vh;
+    background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1400&q=80");
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h1{
+    font-size:60px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#FFD369;
+    color:black;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:scale(1.05);
+}
+
+/* Section */
+
+section{
+    padding:90px 10%;
+}
+
+.title{
+    text-align:center;
+    margin-bottom:50px;
+    font-size:38px;
+}
+
+/* About */
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:15px;
+}
+
+/* Menu */
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 20px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:20px;
+}
+
+.price{
+    color:#d62828;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+/* Gallery */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img{
+    width:100%;
+    border-radius:12px;
+}
+
+/* Contact */
+
+.contact{
+    text-align:center;
+    line-height:2;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.about{
+grid-template-columns:1fr;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+nav ul{
+display:none;
+}
+
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<nav>
+
+<div class="logo">🍽 Ahui Cakwe</div>
+
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#about">Tentang</a></li>
+<li><a href="#menu">Menu</a></li>
+<li><a href="#gallery">Galeri</a></li>
+<li><a href="#contact">Kontak</a></li>
+</ul>
+
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>Selamat Datang</h1>
+
+<p>Rasakan cita rasa terbaik Indonesia dengan bahan berkualitas.</p>
+	
+<a class="btn" href="#menu">Lihat Menu</a>
+
+</div>
+
+</section>
+
+<section id="about">
+
+<h2 class="title">Tentang Kami</h2>
+
+<div class="about">
+
+<img src="images/home.jpg" alt="Home">
+
+<div>
+
+<h3>Restoran Premium</h3>
+
+<br>
+
+<p>
+Kami menyajikan hidangan khas Selatpanjang dengan bahan segar,
+resep autentik, dan pelayanan terbaik untuk keluarga.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="menu">
+
+<h2 class="title">Menu Favorit</h2>
+
+<div class="menu-grid">
+
+<div class="card">
+
+<img src="images/fotocakwe.jpg" alt="fotocakwe">
+
+<div class="card-content">
+
+<h3>Cakwe</h3>
+
+<p>Roti goreng berbentuk memanjang dengan rasa gurih, tekstur luar yang renyah, dan bagian dalam yang berongga serta lembut.</p>
+
+<div class="price">Rp5.000</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/taolinteng.jpg" alt="taolinteng">
+
+<div class="card-content">
+
+<h3>Tao Lin Teng</h3>
+
+<p>Sup kacang tanah rasa manis yang ringan dan tekstur kacangnya yang sangat lembut.</p>
+
+<div class="price">Rp12.000</div>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="images/taosuan.jpg" alt="taosuan">
+
+<div class="card-content">
+
+<h3>Tao Suan</h3>
+
+<p>Sup kacang hijau kupas kulit rasa manis yang ringan dan tekstur kuah kental bening.</p>
+
+<div class="price">Rp12.000</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2 class="title">Galeri</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=700&q=80">
+
+<img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=700&q=80">
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="title">Hubungi Kami</h2>
+
+<div class="contact">
+
+📍 Jl. Permata Baloi, Baloi Indah, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29444, Indonesia
+
+<br>
+
+📞 +62 821-1027-4683
+
+<br>
+
+✉ info@ahuicakwe.com
+
+<br><br>
+
+<a class="btn" href="#">Reservasi Sekarang</a>
+
+</div>
+
+</section>
+
+<footer>
+
+© 2026 Ahui Cakwe. All Rights Reserved.
+
+</footer>
+
+<script>
+
+window.addEventListener("scroll",()=>{
+
+const header=document.querySelector("header");
+
+if(window.scrollY>50){
+
+header.style.background="#111";
+
+}else{
+
+header.style.background="rgba(0,0,0,.8)";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>
